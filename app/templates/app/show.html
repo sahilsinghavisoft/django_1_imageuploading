@@ -1,0 +1,9 @@
+<h1>show img</h1>
+{% if key1 %}
+{% for i in key1 %}
+image_name=:{{i.imagename}}
+<br>
+<img src="{{MEDIA_URL}}{{i.image.url}}" alt="" src="">
+
+{% endfor %}
+{% endif %}
